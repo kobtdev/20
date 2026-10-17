@@ -984,4 +984,24 @@ body {
 }
 .not-loaded * {
   animation-play-state: paused !important;
-}/*# sourceMappingURL=style.css.map */
+}
+.side-gif {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(12vw, 22vmin);
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  z-index: 50;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.side-gif--left {
+  left: 2vw;
+}
+.side-gif--right {
+  right: 2vw;
+  transform: translateY(-50%) scaleX(-1);
+}
+/*# sourceMappingURL=style.css.map */
